@@ -1,6 +1,16 @@
-
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
+import random
+import string
+
+
+
+def mail_generator(y):
+    return ''.join(random.choice(string.ascii_letters) for _ in range(y))
+
+
+
+
 
 def test_reg():
     try:
@@ -11,7 +21,7 @@ def test_reg():
         button_name = "registration_submit"
         link = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
         succes_link = "http://selenium1py.pythonanywhere.com/ru/"
-        login_mail = "samplebamble643@yandex.ru"
+        login_mail = mail_generator(8)+"@gmail.com"
         password = "WoobWeebBeep11"
 
         #Arrange
@@ -39,5 +49,3 @@ def test_reg():
     finally:
         browser.quit()
 test_reg()
-
-
