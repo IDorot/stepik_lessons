@@ -19,6 +19,6 @@ def test_ui_language(browser, language):
     page_lang = browser.find_element_by_class_name("no-js").get_attribute("lang")
 
     #Assert
-    #lower() используется т.к. в en-GB версии страницы аттрибут lang равен "en-gb", из-за чего тест может упасть без подгона под один регистр
+    #lower() используется т.к. в en-GB версии страницы аттрибут lang равен "en-gb", из-за чего тест может упасть
     assert buy_button.text == correct_button_text[language]
     assert page_lang == language.lower()
