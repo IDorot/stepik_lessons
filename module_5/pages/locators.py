@@ -16,11 +16,8 @@ class ProductPageLocators():
     ADD_BUTTON = (By.CSS_SELECTOR,".btn.btn-lg.btn-primary.btn-add-to-basket")
     SUCCES_MSG = (By.CSS_SELECTOR,".alert.alert-safe.alert-noicon.alert-success.fade.in:nth-child(1) .alertinner strong")
     BASKET_MSG = (By.CSS_SELECTOR,".alert.alert-safe.alert-noicon.alert-info.fade.in .alertinner strong")
-    BASKET_TOTAL = (By.CSS_SELECTOR,".basket-mini.pull-right.hidden-xs > strong")
-    BOOK_NAME = (By.CSS_SELECTOR,".col-sm-6.product_main h1")
-    BOOK_PRICE = (By.CSS_SELECTOR,".price_color")
-    BOOK_NAME_EX = (By.CSS_SELECTOR,".col-sm-6.product_main h1")
-    BOOK_PRICE_EX = (By.CSS_SELECTOR,".col-sm-6.product_main p")
+    BOOK_NAME = (By.CSS_SELECTOR, ".col-sm-6.product_main h1")
+    BOOK_PRICE = (By.CSS_SELECTOR, ".col-sm-6.product_main p")
 
 
 
