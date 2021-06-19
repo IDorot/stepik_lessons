@@ -1,0 +1,404 @@
+{
+  "921f2bd7f1d917f20893b7cc702e48d9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "39a4010990b4ceca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105269059,
+        "stop" : 1624105271877,
+        "duration" : 2818
+      }
+    } ]
+  },
+  "14864204c6af13ad92397c5881274ddb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "69cad551691e1ae8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105298285,
+        "stop" : 1624105303280,
+        "duration" : 4995
+      }
+    } ]
+  },
+  "f839820fadcc5418eef5369a1303f3f4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8760196d8091ba22",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105393560,
+        "stop" : 1624105415350,
+        "duration" : 21790
+      }
+    } ]
+  },
+  "d82cef5e544e3ee82e5c0aed86f4b7d4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1b82fa298cb6e0ca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105275023,
+        "stop" : 1624105279869,
+        "duration" : 4846
+      }
+    } ]
+  },
+  "a3402cd0193d118811489f9e4e49510a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1b31e858758a5234",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105256954,
+        "stop" : 1624105259752,
+        "duration" : 2798
+      }
+    } ]
+  },
+  "4207297b40eddb8cf30f4597605a2476" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d5d7cdd8559727a6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105262865,
+        "stop" : 1624105265897,
+        "duration" : 3032
+      }
+    } ]
+  },
+  "9172ddc0d6b907a80ba7befefcba349e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e789afa0b57add18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105426415,
+        "stop" : 1624105430668,
+        "duration" : 4253
+      }
+    } ]
+  },
+  "00be33377795fb724b903c2887a23a71" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9fb6de2113b75b61",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL\n\nAssertionError: Succes message doesn't dissappear",
+      "time" : {
+        "start" : 1624105346567,
+        "stop" : 1624105354099,
+        "duration" : 7532
+      }
+    } ]
+  },
+  "7bf3fbad3a4b8be6365e907e1b88d850" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "219a6b6cf89e1b22",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105244325,
+        "stop" : 1624105247568,
+        "duration" : 3243
+      }
+    } ]
+  },
+  "798edda9bdab72e7c88f4736977e6a20" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "254ea8f062b12a5b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105692280,
+        "stop" : 1624105696422,
+        "duration" : 4142
+      }
+    } ]
+  },
+  "ba6b4590dd2e82757be5a31d3190ef16" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ceacb18248123e71",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105250866,
+        "stop" : 1624105253727,
+        "duration" : 2861
+      }
+    } ]
+  },
+  "fb7b85784b9543172a657c126c418389" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9580a69943f96b0b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105306360,
+        "stop" : 1624105309282,
+        "duration" : 2922
+      }
+    } ]
+  },
+  "f05c655882ae6c419407270eda1f100b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "378c250e4e2c0a4f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105357311,
+        "stop" : 1624105359163,
+        "duration" : 1852
+      }
+    } ]
+  },
+  "8ea3c92b99fcb2b75986a6ae54238c5a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "92501c61ffc894e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105646281,
+        "stop" : 1624105683440,
+        "duration" : 37159
+      }
+    } ]
+  },
+  "7791d24ff79aa305ee95ecc9e5d47c89" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fcc65a2128de69a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105318319,
+        "stop" : 1624105343457,
+        "duration" : 25138
+      }
+    } ]
+  },
+  "207f3e681c61281b70a910743494f82c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "31614e2cd67e6547",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL\n\nAssertionError: Success message is presented, but should not be",
+      "time" : {
+        "start" : 1624105312405,
+        "stop" : 1624105315181,
+        "duration" : 2776
+      }
+    } ]
+  },
+  "0db81c6d2d83e95f319e8ea8e0d30bbb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "db877a24ed594255",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105283045,
+        "stop" : 1624105288086,
+        "duration" : 5041
+      }
+    } ]
+  },
+  "2eba6e3642a25f131a564ad4026cb548" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "beeee5e7fc2f0220",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105686569,
+        "stop" : 1624105689153,
+        "duration" : 2584
+      }
+    } ]
+  },
+  "7cd4c4b5dfe775439caa482a83d5b4eb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "535b8368f6d74a89",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105362277,
+        "stop" : 1624105366283,
+        "duration" : 4006
+      }
+    } ]
+  },
+  "d15becef0f12dc94dbe249b17bd5b191" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f05db1100eb5cdd8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624105369365,
+        "stop" : 1624105382016,
+        "duration" : 12651
+      }
+    } ]
+  },
+  "87c815e2ff57b386ed8170cc72071f13" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "72d82b96c363dbe3",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL\n\nAssertionError: Incorrect succes message",
+      "time" : {
+        "start" : 1624105292188,
+        "stop" : 1624105295076,
+        "duration" : 2888
+      }
+    } ]
+  }
+}

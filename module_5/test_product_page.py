@@ -4,13 +4,15 @@ from selenium import webdriver
 from .pages.product_page import ProductPage
 from .pages.login_page import LoginPage
 from .pages.basket_page import BasketPage
+import random
+import string
 
 
 
 class TestProductPage:
 
     @pytest.mark.parametrize('promo_offer', ["offer0", "offer1", "offer2", "offer3", "offer4", "offer5", "offer6",
-                                             pytest.param("Bugged offer", marks=pytest.mark.xfail), "offer8", "offer9"])
+                                             pytest.param("offer7", marks=pytest.mark.xfail), "offer8", "offer9"])
     def test_guest_can_add_product_to_basket(self, browser, promo_offer):
         link= "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo="
         page = ProductPage(browser, link + promo_offer)
@@ -19,7 +21,7 @@ class TestProductPage:
         page.solve_quiz_and_get_code()
         page.should_be_correct_succes_msg()
 
-    @pytest.mark.skip
+    @pytest.mark.xfail
     def test_guest_cant_see_success_message_after_adding_product_to_basket(self, browser):
         link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
         page = ProductPage(browser, link)
@@ -33,7 +35,7 @@ class TestProductPage:
         page.open()
         page.should_not_be_success_message()
 
-    @pytest.mark.skip
+    @pytest.mark.xfail
     def test_message_disappeared_after_adding_product_to_basket(self, browser):
         link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
         page = ProductPage(browser, link)
@@ -66,6 +68,36 @@ class TestProductPage:
         basket_page = BasketPage(browser, browser.current_url)
         basket_page.should_not_be_items()
         basket_page.should_be_no_items_msg()
+
+@pytest.mark.user_test
+class TestUserAddToBasketFromProductPage:
+
+    @pytest.fixture(scope="function", autouse=True)
+    def setup(self, browser):
+        link = "http://selenium1py.pythonanywhere.com/en-gb/accounts/login/"
+        page = LoginPage(browser, link)
+        page.open()
+        mail = page.mail_generator(9) + "@gmail.com"
+        password = "aksdjkajdkajkjdkajkdjajk11"
+        page.register_new_user(mail, password)
+        page.should_be_authorized_user()
+
+
+
+    def test_user_cant_see_success_message(self, browser):
+        link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
+        page = ProductPage(browser, link)
+        page.open()
+        page.should_not_be_success_message()
+
+    def test_user_can_add_product_to_basket(self, browser):
+        link= "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
+        page = ProductPage(browser, link)
+        page.open()
+        page.press_buy_button()
+        page.should_be_correct_succes_msg()
+
+
 
 
 
