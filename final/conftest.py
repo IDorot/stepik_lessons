@@ -5,20 +5,30 @@ from selenium.webdriver.chrome.options import Options
 
 def pytest_addoption(parser):
     parser.addoption(
-        "--language", action="store", default=None, help="Choose your language: ru, en-GB, es, fr"
+        "--language", action="store", default="en-GB", help="Choose your language: ru, en-GB, es, fr"
     )
+    parser.addoption('--browser_name', action='store', default="chrome",
+                     help="Choose browser: chrome or firefox")
+
 
 @pytest.fixture(scope="function")
-def browser(language):
+def browser(language, request):
     options = Options()
     options.add_experimental_option('prefs', {'intl.accept_languages': language})
-    browser = webdriver.Chrome(options=options)
-    print(f"\nstart browser for test in {language} ..")
+    browser_name = request.config.getoption("browser_name")
+    if browser_name == "chrome":
+        print(f"\nstart chrome browser in {language} for test..")
+        browser = webdriver.Chrome()
+    elif browser_name == "firefox":
+        print(f"\nstart firefox browser in {language} for test..")
+        browser = webdriver.Firefox()
+    else:
+        print("Browser {} still is not implemented".format(browser_name))
     yield browser
-    print("\nquit browser...")
-    browser.save_screenshot("1.png")
+    print("\nquit browser..")
     browser.quit()
+
 
 @pytest.fixture(scope="session")
 def language(request):
-    return  request.config.getoption("language")
+    return request.config.getoption("language")
