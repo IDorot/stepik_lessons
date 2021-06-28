@@ -12,7 +12,13 @@ class BasePage():
         self.url = url
         self.browser.implicitly_wait(timeout)
 
+    def is_element_selected(self, how, what, timeout=2):
+        try:
+            WebDriverWait(self.browser, timeout).until(EC.element_to_be_selected((how, what)))
+        except TimeoutException:
+            return False
 
+        return True
 
     def is_element_present(self, how, what):
         try:
