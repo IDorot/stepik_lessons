@@ -11,7 +11,7 @@ class ProductPage(BasePage):
 
     def take_title_name(self):
         title_name = self.browser.find_element(*ProductPageLocators.TITLE_NAME).text
-
+        return title_name
 
 
 
