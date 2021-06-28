@@ -4,8 +4,6 @@ from .locators import BasePageLocators
 from selenium.webdriver.support import expected_conditions as EC
 
 
-
-
 class MainPage(BasePage):
 
     def open_drop_list(self):
@@ -13,8 +11,8 @@ class MainPage(BasePage):
         drop_list_button.click()
 
     def should_be_basket_drop_list(self):
-        assert self.is_usable(*BasePageLocators.DROPDOWN_BASKET_LIST) ,\
-        "There is no dropdown list for using"
+        assert self.is_usable(*BasePageLocators.DROPDOWN_BASKET_LIST), \
+            "There is no dropdown list for using"
 
     def search_something(self, title):
         search_field = self.browser.find_element(*BasePageLocators.SEARCH_FIELD)
@@ -30,7 +28,8 @@ class MainPage(BasePage):
 
     def search_result_should_be(self):
         assert self.is_element_present(*BasePageLocators.SEARCH_RESULT_BODY), \
-        "There is no search result, but it should be!"
+            "There is no search result, but it should be!"
 
-
-
+    def search_result_should_not_be(self):
+        assert self.is_not_element_present(*BasePageLocators.SEARCH_RESULT_BODY), \
+            "There is search result, but it shouldn't be!"
