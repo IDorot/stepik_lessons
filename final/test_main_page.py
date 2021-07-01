@@ -72,3 +72,4 @@ class TestMainPageSearch:
         page.search_something(invalid_title)
         # Assert
         page.search_result_should_not_be()
+
