@@ -27,8 +27,7 @@ class BasketPage(BasePage):
         total = self.browser.find_element(*BasketPageLocators.BASKET_TOTAL).text
         print("Got Total's value")
         price_decimal = Decimal(price.strip("£"))
-        discount_offer = [price_decimal, price_decimal * 2, price_decimal * 3,
-                          price_decimal * 4]  # Массив с переменной содержащей скидку.
+        discount_offer = [price_decimal, price_decimal * 2, price_decimal * 3]  # Массив с переменной содержащей скидку.
         total_er = Decimal(price.strip("£")) * N
         total_ar = Decimal(total.strip("£"))
 

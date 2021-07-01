@@ -40,6 +40,7 @@ class TestMainPageBasketDropdownList:
         page.should_be_basket_drop_list()
 
 
+@pytest.mark.personal_tests
 class TestMainPageSearch:
 
     def test_guest_can_search_full_valid_title_name(self, browser):

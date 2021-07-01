@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from .base_page import BasePage
 from .locators import BasePageLocators
-from selenium.webdriver.support import expected_conditions as EC
+
 
 
 class MainPage(BasePage):

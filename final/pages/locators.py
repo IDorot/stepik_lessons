@@ -4,10 +4,9 @@ from selenium.webdriver.common.by import By
 class ProductPageLocators():
     ADD_BUTTON = (By.CSS_SELECTOR, ".btn.btn-lg.btn-primary.btn-add-to-basket")
     TITLE_NAME = (By.CSS_SELECTOR, ".col-sm-6.product_main h1")
-    REVIEW_BUTTON = (By.CSS_SELECTOR,"#write_review")
+    REVIEW_BUTTON = (By.CSS_SELECTOR, "#write_review")
     REVIEW_FORM = (By.CSS_SELECTOR, "#add_review_form")
-    RATING_BAR_SELECT_1ST_OPTION =(By.CSS_SELECTOR,".controls [value ='1']")
-
+    RATING_BAR_SELECT_1ST_OPTION = (By.CSS_SELECTOR, ".controls [value ='1']")
 
 
 class BasePageLocators():

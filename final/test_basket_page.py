@@ -1,14 +1,13 @@
 import pytest
-import math
+
 from selenium import webdriver
 from .pages.product_page import ProductPage
 from .pages.basket_page import BasketPage
-import string
 
 #DATA
 link = "http://selenium1py.pythonanywhere.com/basket/"
 item_link = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-age-of-the-pussyfoot_89/"
-
+list = [3,6,9] #Список для параметризированного теста, содержащий количество книг(пограничные значения)
 @pytest.mark.personal_tests
 class TestBasketQuantity:
 
@@ -22,7 +21,7 @@ class TestBasketQuantity:
         product_page.open()
         product_page.press_buy_button()
 
-    @pytest.mark.parametrize('pcs',range(1,13)) #Проверяется расчёт чека корзины с валидными значениями количества книг от 1 до 12 включительно
+    @pytest.mark.parametrize('pcs',list) #Проверяется расчёт чека корзины с валидными значениями количества книг от 1 до 12 включительно
     def test_guest_basket_calculation(self, browser,pcs):
         #Arrange
         page = BasketPage(browser, link)
