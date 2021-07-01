@@ -1,7 +1,5 @@
-import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from .base_page import BasePage
 from .locators import BasketPageLocators
 from decimal import Decimal

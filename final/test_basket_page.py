@@ -1,5 +1,4 @@
 import pytest
-
 from selenium import webdriver
 from .pages.product_page import ProductPage
 from .pages.basket_page import BasketPage
@@ -8,6 +7,7 @@ from .pages.basket_page import BasketPage
 link = "http://selenium1py.pythonanywhere.com/basket/"
 item_link = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-age-of-the-pussyfoot_89/"
 list = [3,6,9] #Список для параметризированного теста, содержащий количество книг(пограничные значения)
+
 @pytest.mark.personal_tests
 class TestBasketQuantity:
 
